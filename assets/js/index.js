@@ -11,7 +11,7 @@ $(function () {
 function getUserInfo() {
     $.ajax({
         method: 'GET',
-        url: '/my/uerinfo',
+        url: '/my/userinfo',
         Headers: {
             Authorization: localStorage.getItem('token') || ''
         },
