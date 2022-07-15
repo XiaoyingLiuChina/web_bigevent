@@ -1,6 +1,10 @@
 $(function() {
     $('#link_login').on('click', function() {
+<<<<<<< HEAD
        
+=======
+        console.log('songy');
+>>>>>>> 4072538 (登录和注册功能大致已完成)
         $('.register-box').hide()
         $('.login-box').show()
     })
@@ -39,7 +43,11 @@ $(function() {
 
                     return layer.msg(res.message);
                 }
+<<<<<<< HEAD
                 layer.msg('注册成功');
+=======
+                layer.msg('注册成功')
+>>>>>>> 4072538 (登录和注册功能大致已完成)
                 $('#link_login').trigger('click')
             }
         })
@@ -54,6 +62,10 @@ $(function() {
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4072538 (登录和注册功能大致已完成)
                     return layer.msg(res.message);
                 }
                 layer.msg('登录成功')
@@ -62,4 +74,8 @@ $(function() {
             }
         })
     })
+<<<<<<< HEAD
 })
+=======
+})
+>>>>>>> 4072538 (登录和注册功能大致已完成)
