@@ -3,6 +3,16 @@ $(function () {
     getUserInfo();
 
 
+    var layer=layui.layer;
+    $('#btnLoginout').on('click',function(){
+        layer.confirm('确定要退出登录吗？',{icon:3,title:'提示'},function(index){
+            localStorage.removeItem('token');
+            location.href='/login.html';
+
+              // 关闭 confirm 询问框
+            layer.close(index);
+        })
+    })
 
 
 
