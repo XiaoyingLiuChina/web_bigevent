@@ -1,0 +1,24 @@
+html,
+body {
+    background: url('/assets/images/login_bg.jpg');
+    background-size: cover;
+}
+
+.loginAndRegister {
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-box {
+    height: 60px;
+    background: url('/assets/images/login_title.png') no-repeat center;
+}
+
+.register-box{
+    display: none;
+}
