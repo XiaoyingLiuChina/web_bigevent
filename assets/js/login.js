@@ -39,7 +39,7 @@ $(function() {
 
                     return layer.msg(res.message);
                 }
-                layer.msg('注册成功')
+                layer.msg('注册成功');
                 $('#link_login').trigger('click')
             }
         })
@@ -54,7 +54,6 @@ $(function() {
             data: $(this).serialize(),
             success: function(res) {
                 if (res.status !== 0) {
-
                     return layer.msg(res.message);
                 }
                 layer.msg('登录成功')
