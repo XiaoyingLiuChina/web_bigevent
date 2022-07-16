@@ -11,6 +11,32 @@ $(function () {
             content: $('#dialog-add').html()
         })
     })
+    $('tbody').on('click','#delcate',function(){
+        // console.log($(this).parent().parent());
+        var $td_id=$($(this).parent().siblings()[0]);
+        
+        console.log($td_id.text());
+
+        layer.confirm('确认删除？',{icon:3,title:'提示'},function(index){
+            $.ajax({
+                method:'GET',
+                url:'/my/artcate/deletecate/'+$td_id.text(),
+                success:function(res){
+    
+                    if (res.status !== 0) {
+                        return layer.msg(res.message)
+                    }
+                    
+                    layer.msg('删除分类成功！');
+                    layer.close(index);
+                    initArtCateList();
+                    
+                }
+                
+            })
+        })
+    })
+   
 
 
     // 通过代理的形式，为 form-add 表单绑定 submit 事件
