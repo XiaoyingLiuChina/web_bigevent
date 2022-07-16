@@ -25,7 +25,11 @@ $(function () {
                 }
                 layer.msg('更新用户信息成功！')
                 // 调用父页面中的方法，重新渲染用户的头像和用户的信息
+
+                // console.log(window.parent);
                 window.parent.getUserInfo()
+                // console.log(window.parent.getUserInfo())
+                
             }
         })
     })
